@@ -1,5 +1,25 @@
 这里定义了项目用到数据的数据源的访问方式、返回类型
 
+关键术语
+服务源： 从哪里获取数据，如何提供，属于部署方案的一部分。
+资源标识： 
+    http://ip:port/handong/v1/colums/ 标识获取hd的全部栏目，
+    http://ip:port/handong/v1/colums/subs/ 标识获取hd的全部栏目与子栏目数据
+    http://ip:port/handong/v1/colums/{columnid}/subs 获取指定栏目号下的子栏目
+    http://ip:port/handong/v1/recommends/ 标识获取hd的全部推举位
+    http://ip:port/handong/v1/recommends/{recommendid}/data 获取指定推荐位下的数据
+    http://ip:port/handong/v1/recommends/data 获取HD全部推荐位下的数据
+    补充专题接口例子这里
+    /*  */
+    http://ip:port/handong/v1/videos/#page 获取HD视频列表，分页
+    http://ip:port/handong/v1/videos/column/{columnid}/ 获取HD指定栏目下的视频列表
+    http://ip:port/handong/v1/videos/column/{columnid}/sub/{subid}/ 获取HD指定栏目、子栏目下的视频列表
+    http://ip:port/handong/v1/video/{videid}/token/{token}/playurl 获取HD指定视频的播放路径
+    
+    
+访问方式： 与数据源有关，如何获取该方式？
+数据类型： 与接口实现有关，自包含。
+
 需要如下数据
 
 栏目与分类数据
