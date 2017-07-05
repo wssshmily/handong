@@ -16,6 +16,10 @@
     http://ip:port/handong/v1/videos/column/{columnid}/sub/{subid}/ 获取HD指定栏目、子栏目下的视频列表
     http://ip:port/handong/v1/video/{videid}/token/{token}/playurl 获取HD指定视频的播放路径
     
+    http://ip:port/handong/v1/videos/column/{columnid}/sub/{subid}/?tags=["tag1","tag2"] 获取HD指定栏目、子栏目下指定标签的视频列表
+    http://ip:port/handong/v1/videos/?tags=["tag1","tag2"] 获取HD指定指定标签的视频列表
+    http://ip:port/handong/v1/videos/?year between ["tag1","tag2"] 获取HD指定范围的
+    
     
 访问方式： 与数据源有关，如何获取该方式？
 数据类型： 与接口实现有关，自包含。
